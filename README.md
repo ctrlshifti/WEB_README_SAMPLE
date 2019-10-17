@@ -3,10 +3,21 @@
 ## A SOME_ABC Company Pvt Ltd employee management app
 
 App Name : ABC Rocket
+
 Customer : SOME_ABC Company Pvt Ltd
-Development Team : John Dev, Jane Dev, Jonah Dev
+
+Development Team : 
+
+John Dev (Android developer : May 2018 - June 2019), 
+
+Jane Dev (Android developer : June 2019 - till date), 
+
+Jonah Dev (Backend developer : May 2016 - till date)
+
 Design Team : Wan Chung, Lee Chi
-Management : Nikola Tisola, Thomas Eden
+
+Management : Nikola Tisola (Sr Manger : May 2012 - June 2016), Thomas Eden (Sr Manger : July2016 - till date)
+
 Web URL : http://ROCKETAPP.SOMECOMPANY.COM
 
 ---
@@ -60,9 +71,11 @@ Therefore the aim is to get the code from the git repository to run on the devel
 
 ---
 **Clone the repository from GitLab :**  
+
 ```git clone git@gitserver.abccompanygit.com:root/rocket.git```
 
 **Change current working directory to Project directory**
+
 ```cd Rocket```
 
 ( This is the cordova as well as the angular root folder. )
@@ -70,7 +83,9 @@ Therefore the aim is to get the code from the git repository to run on the devel
 **Checking out the latest development branch**
 
 As of writing this guide the main branch used for development is : develop  
-To switch to this branch run : ```git checkout develop```
+To switch to this branch run : 
+
+```git checkout develop```
 
 **Installing dependencies**  
 This project requires cordova for running,
@@ -85,18 +100,22 @@ Please ensure this file is updated incase any plugin is added / removed.
 Please follow below steps for installation :
 
 Install Angular and Cordova NPM Dependencies
+
 ```npm i```
 
 Next install cordova platforms and plugins
+
 ```cordova prepare```
 
 Incase you get errors as : ```Current working directory is not a Cordova-based project.```
 
 The www folder used by cordova cli to detect a cordova project might be missing
 Simply make an empty www folder via file manager or via commandline as :
+
 ```mkdir www```
 
 Install cordova android platform
+
 ```cordova platform add android```
 
 ---
@@ -108,6 +127,7 @@ sudo service kurento-media-server-6.0 start
 
 ---
 **Note for future developers**
+
 Home is an addon module which adds search by name functionality to the core code
 The files in the above directory when included in the index file overwrites methods, variables, css in the core code
 and manipulates the DOM at runtime by adding / removing elements.
